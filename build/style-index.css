@@ -1,0 +1,79 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.accordion {
+  background-color: #fff;
+  border: 1px solid #EAE9ED;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0px;
+  margin: 1em 0px;
+}
+.accordion .accordion-item {
+  border-top: 1px solid #EAE9ED;
+}
+.accordion .accordion-item:first-child {
+  border-top: none;
+}
+.accordion .accordion-item .accordion-header {
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: left;
+  color: #000;
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+.accordion .accordion-item .accordion-header::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,<svg width=\"14\" height=\"8\" viewBox=\"0 0 14 8\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 7L7 1L13 7\" stroke=\"black\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>");
+  transition: transform 0.3s ease;
+}
+.accordion .accordion-item .accordion-header[aria-expanded=true]::after {
+  transform: rotate(-180deg);
+}
+.accordion .accordion-item .accordion-content {
+  padding: 0px 20px 20px 20px;
+  display: none;
+  animation: AccordionfadeIn 0.3s ease;
+}
+.accordion .accordion-item .accordion-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px;
+}
+.accordion .accordion-item .accordion-content.is-open {
+  display: block;
+}
+
+@keyframes AccordionfadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/
